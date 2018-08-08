@@ -1,3 +1,3 @@
 # StreamingDemo-iOS
 
-A ReplayKit streaming demo app.
+A ReplayKit streaming with VoIP demo.
