@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49EB10AE36CD067ABA09A900 /* Pods_ReplayBroadcastUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFD8DF99FB63123FC21E6A5 /* Pods_ReplayBroadcastUI.framework */; };
+		8EE8DD8B99DF1D1AAB026F5C /* Pods_ReplayBroadcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6111A0ED4F2CD6462CE2BD /* Pods_ReplayBroadcast.framework */; };
+		A1340B211EFA5C2000B0E7F1 /* libVoIPKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1340B201EFA5C2000B0E7F1 /* libVoIPKit.a */; };
+		A14121131EC0260D0049E847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14121121EC0260D0049E847 /* AppDelegate.swift */; };
+		A14121151EC0260D0049E847 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14121141EC0260D0049E847 /* ViewController.swift */; };
+		A14121181EC0260D0049E847 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14121161EC0260D0049E847 /* Main.storyboard */; };
+		A141211A1EC0260D0049E847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14121191EC0260D0049E847 /* Assets.xcassets */; };
+		A141211D1EC0260D0049E847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A141211B1EC0260D0049E847 /* LaunchScreen.storyboard */; };
+		A141212A1EC026A90049E847 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14121291EC026A90049E847 /* ReplayKit.framework */; };
+		A141212D1EC026A90049E847 /* MovieClipHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A141212C1EC026A90049E847 /* MovieClipHandler.swift */; };
+		A141212F1EC026A90049E847 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A141212E1EC026A90049E847 /* SampleHandler.swift */; };
+		A14121361EC026A90049E847 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14121291EC026A90049E847 /* ReplayKit.framework */; };
+		A14121381EC026A90049E847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14121371EC026A90049E847 /* UIKit.framework */; };
+		A141213B1EC026A90049E847 /* BroadcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A141213A1EC026A90049E847 /* BroadcastViewController.swift */; };
+		A141213E1EC026A90049E847 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A141213C1EC026A90049E847 /* MainInterface.storyboard */; };
+		A14121421EC026A90049E847 /* ReplayBroadcastUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A14121351EC026A90049E847 /* ReplayBroadcastUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A14121451EC026A90049E847 /* ReplayBroadcast.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A14121281EC026A90049E847 /* ReplayBroadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A14121521EC05E710049E847 /* RTMPBroadcaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14121511EC05E710049E847 /* RTMPBroadcaster.swift */; };
+		A1F3D1561EFD15C400D6B935 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F3D1551EFD15C400D6B935 /* CocoaAsyncSocket.framework */; };
+		AEDA50DE10075DCC5AE3B902 /* Pods_StreamingEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA79D469CE126DAEBC3CBC7 /* Pods_StreamingEngine.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A14121401EC026A90049E847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14121071EC0260D0049E847 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A14121341EC026A90049E847;
+			remoteInfo = ReplayBroadcastUI;
+		};
+		A14121431EC026A90049E847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14121071EC0260D0049E847 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A14121271EC026A90049E847;
+			remoteInfo = ReplayBroadcast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A141214C1EC026A90049E847 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A14121421EC026A90049E847 /* ReplayBroadcastUI.appex in Embed App Extensions */,
+				A14121451EC026A90049E847 /* ReplayBroadcast.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0153513E1B5AEC25A5F0981B /* Pods-ReplayBroadcast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplayBroadcast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReplayBroadcast/Pods-ReplayBroadcast.debug.xcconfig"; sourceTree = "<group>"; };
+		10DD42428B4EDE8F68E5C872 /* Pods-ReplayBroadcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplayBroadcast.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReplayBroadcast/Pods-ReplayBroadcast.release.xcconfig"; sourceTree = "<group>"; };
+		7855B39BF85FC1890FB614FE /* Pods-StreamingEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamingEngine/Pods-StreamingEngine.release.xcconfig"; sourceTree = "<group>"; };
+		7EA79D469CE126DAEBC3CBC7 /* Pods_StreamingEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamingEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFD8DF99FB63123FC21E6A5 /* Pods_ReplayBroadcastUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReplayBroadcastUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1340B201EFA5C2000B0E7F1 /* libVoIPKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVoIPKit.a; path = libs/libVoIPKit.a; sourceTree = "<group>"; };
+		A141210F1EC0260D0049E847 /* StreamingEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamingEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14121121EC0260D0049E847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A14121141EC0260D0049E847 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A14121171EC0260D0049E847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A14121191EC0260D0049E847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A141211C1EC0260D0049E847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A141211E1EC0260D0049E847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14121281EC026A90049E847 /* ReplayBroadcast.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReplayBroadcast.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14121291EC026A90049E847 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		A141212C1EC026A90049E847 /* MovieClipHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClipHandler.swift; sourceTree = "<group>"; };
+		A141212E1EC026A90049E847 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		A14121301EC026A90049E847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14121351EC026A90049E847 /* ReplayBroadcastUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReplayBroadcastUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14121371EC026A90049E847 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A141213A1EC026A90049E847 /* BroadcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastViewController.swift; sourceTree = "<group>"; };
+		A141213D1EC026A90049E847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A141213F1EC026A90049E847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14121511EC05E710049E847 /* RTMPBroadcaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTMPBroadcaster.swift; sourceTree = "<group>"; };
+		A18946B71EDEC44B00F0450E /* ReplayBroadcast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReplayBroadcast-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1F3D1551EFD15C400D6B935 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = libs/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		A95FF3E9886B632FC8E0F509 /* Pods-StreamingEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreamingEngine/Pods-StreamingEngine.debug.xcconfig"; sourceTree = "<group>"; };
+		B9BE9502433AC7060836BB56 /* Pods-ReplayBroadcastUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplayBroadcastUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReplayBroadcastUI/Pods-ReplayBroadcastUI.debug.xcconfig"; sourceTree = "<group>"; };
+		BE6111A0ED4F2CD6462CE2BD /* Pods_ReplayBroadcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReplayBroadcast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90FB831FA12AFE22007C076 /* Pods-ReplayBroadcastUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplayBroadcastUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReplayBroadcastUI/Pods-ReplayBroadcastUI.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A141210C1EC0260D0049E847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDA50DE10075DCC5AE3B902 /* Pods_StreamingEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14121251EC026A90049E847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F3D1561EFD15C400D6B935 /* CocoaAsyncSocket.framework in Frameworks */,
+				A1340B211EFA5C2000B0E7F1 /* libVoIPKit.a in Frameworks */,
+				A141212A1EC026A90049E847 /* ReplayKit.framework in Frameworks */,
+				8EE8DD8B99DF1D1AAB026F5C /* Pods_ReplayBroadcast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14121321EC026A90049E847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14121361EC026A90049E847 /* ReplayKit.framework in Frameworks */,
+				A14121381EC026A90049E847 /* UIKit.framework in Frameworks */,
+				49EB10AE36CD067ABA09A900 /* Pods_ReplayBroadcastUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56DDA6E74990314B0C32E4EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A95FF3E9886B632FC8E0F509 /* Pods-StreamingEngine.debug.xcconfig */,
+				7855B39BF85FC1890FB614FE /* Pods-StreamingEngine.release.xcconfig */,
+				0153513E1B5AEC25A5F0981B /* Pods-ReplayBroadcast.debug.xcconfig */,
+				10DD42428B4EDE8F68E5C872 /* Pods-ReplayBroadcast.release.xcconfig */,
+				B9BE9502433AC7060836BB56 /* Pods-ReplayBroadcastUI.debug.xcconfig */,
+				E90FB831FA12AFE22007C076 /* Pods-ReplayBroadcastUI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A14121061EC0260D0049E847 = {
+			isa = PBXGroup;
+			children = (
+				A14121111EC0260D0049E847 /* StreamingEngine */,
+				A141212B1EC026A90049E847 /* ReplayBroadcast */,
+				A14121391EC026A90049E847 /* ReplayBroadcastUI */,
+				A14121101EC0260D0049E847 /* Products */,
+				56DDA6E74990314B0C32E4EB /* Pods */,
+				BDFB88778DC2F8AD75F7BD2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A14121101EC0260D0049E847 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A141210F1EC0260D0049E847 /* StreamingEngine.app */,
+				A14121281EC026A90049E847 /* ReplayBroadcast.appex */,
+				A14121351EC026A90049E847 /* ReplayBroadcastUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A14121111EC0260D0049E847 /* StreamingEngine */ = {
+			isa = PBXGroup;
+			children = (
+				A14121121EC0260D0049E847 /* AppDelegate.swift */,
+				A14121141EC0260D0049E847 /* ViewController.swift */,
+				A14121161EC0260D0049E847 /* Main.storyboard */,
+				A14121191EC0260D0049E847 /* Assets.xcassets */,
+				A141211B1EC0260D0049E847 /* LaunchScreen.storyboard */,
+				A141211E1EC0260D0049E847 /* Info.plist */,
+			);
+			path = StreamingEngine;
+			sourceTree = "<group>";
+		};
+		A141212B1EC026A90049E847 /* ReplayBroadcast */ = {
+			isa = PBXGroup;
+			children = (
+				A141212C1EC026A90049E847 /* MovieClipHandler.swift */,
+				A141212E1EC026A90049E847 /* SampleHandler.swift */,
+				A14121301EC026A90049E847 /* Info.plist */,
+				A14121511EC05E710049E847 /* RTMPBroadcaster.swift */,
+				A18946B71EDEC44B00F0450E /* ReplayBroadcast-Bridging-Header.h */,
+			);
+			path = ReplayBroadcast;
+			sourceTree = "<group>";
+		};
+		A14121391EC026A90049E847 /* ReplayBroadcastUI */ = {
+			isa = PBXGroup;
+			children = (
+				A141213A1EC026A90049E847 /* BroadcastViewController.swift */,
+				A141213C1EC026A90049E847 /* MainInterface.storyboard */,
+				A141213F1EC026A90049E847 /* Info.plist */,
+			);
+			path = ReplayBroadcastUI;
+			sourceTree = "<group>";
+		};
+		BDFB88778DC2F8AD75F7BD2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F3D1551EFD15C400D6B935 /* CocoaAsyncSocket.framework */,
+				A1340B201EFA5C2000B0E7F1 /* libVoIPKit.a */,
+				7EA79D469CE126DAEBC3CBC7 /* Pods_StreamingEngine.framework */,
+				A14121291EC026A90049E847 /* ReplayKit.framework */,
+				A14121371EC026A90049E847 /* UIKit.framework */,
+				BE6111A0ED4F2CD6462CE2BD /* Pods_ReplayBroadcast.framework */,
+				9AFD8DF99FB63123FC21E6A5 /* Pods_ReplayBroadcastUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A141210E1EC0260D0049E847 /* StreamingEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14121211EC0260D0049E847 /* Build configuration list for PBXNativeTarget "StreamingEngine" */;
+			buildPhases = (
+				60BB0368C9B9201FDADCD0E5 /* [CP] Check Pods Manifest.lock */,
+				A141210B1EC0260D0049E847 /* Sources */,
+				A141210C1EC0260D0049E847 /* Frameworks */,
+				A141210D1EC0260D0049E847 /* Resources */,
+				14CF9EC0B1699D0460F3C428 /* [CP] Embed Pods Frameworks */,
+				668C6D2964D0369E1756AA74 /* [CP] Copy Pods Resources */,
+				A141214C1EC026A90049E847 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A14121411EC026A90049E847 /* PBXTargetDependency */,
+				A14121441EC026A90049E847 /* PBXTargetDependency */,
+			);
+			name = StreamingEngine;
+			productName = StreamingEngine;
+			productReference = A141210F1EC0260D0049E847 /* StreamingEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A14121271EC026A90049E847 /* ReplayBroadcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A141214B1EC026A90049E847 /* Build configuration list for PBXNativeTarget "ReplayBroadcast" */;
+			buildPhases = (
+				56E1D5418B64549E0603B576 /* [CP] Check Pods Manifest.lock */,
+				A14121241EC026A90049E847 /* Sources */,
+				A14121251EC026A90049E847 /* Frameworks */,
+				A14121261EC026A90049E847 /* Resources */,
+				9FE9356B709F7594D53E403B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReplayBroadcast;
+			productName = ReplayBroadcast;
+			productReference = A14121281EC026A90049E847 /* ReplayBroadcast.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A14121341EC026A90049E847 /* ReplayBroadcastUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A141214A1EC026A90049E847 /* Build configuration list for PBXNativeTarget "ReplayBroadcastUI" */;
+			buildPhases = (
+				03715CA391B9FA0DBE474530 /* [CP] Check Pods Manifest.lock */,
+				A14121311EC026A90049E847 /* Sources */,
+				A14121321EC026A90049E847 /* Frameworks */,
+				A14121331EC026A90049E847 /* Resources */,
+				2F62FBD73ABEDB2E583D98ED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReplayBroadcastUI;
+			productName = ReplayBroadcastUI;
+			productReference = A14121351EC026A90049E847 /* ReplayBroadcastUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A14121071EC0260D0049E847 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Rayan;
+				TargetAttributes = {
+					A141210E1EC0260D0049E847 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 274SMSL696;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					A14121271EC026A90049E847 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 274SMSL696;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					A14121341EC026A90049E847 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 274SMSL696;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A141210A1EC0260D0049E847 /* Build configuration list for PBXProject "StreamingEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A14121061EC0260D0049E847;
+			productRefGroup = A14121101EC0260D0049E847 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A141210E1EC0260D0049E847 /* StreamingEngine */,
+				A14121271EC026A90049E847 /* ReplayBroadcast */,
+				A14121341EC026A90049E847 /* ReplayBroadcastUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A141210D1EC0260D0049E847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A141211D1EC0260D0049E847 /* LaunchScreen.storyboard in Resources */,
+				A141211A1EC0260D0049E847 /* Assets.xcassets in Resources */,
+				A14121181EC0260D0049E847 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14121261EC026A90049E847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14121331EC026A90049E847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A141213E1EC026A90049E847 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03715CA391B9FA0DBE474530 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		14CF9EC0B1699D0460F3C428 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreamingEngine/Pods-StreamingEngine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F62FBD73ABEDB2E583D98ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReplayBroadcastUI/Pods-ReplayBroadcastUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56E1D5418B64549E0603B576 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		60BB0368C9B9201FDADCD0E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		668C6D2964D0369E1756AA74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreamingEngine/Pods-StreamingEngine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FE9356B709F7594D53E403B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReplayBroadcast/Pods-ReplayBroadcast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A141210B1EC0260D0049E847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14121151EC0260D0049E847 /* ViewController.swift in Sources */,
+				A14121131EC0260D0049E847 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14121241EC026A90049E847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A141212F1EC026A90049E847 /* SampleHandler.swift in Sources */,
+				A141212D1EC026A90049E847 /* MovieClipHandler.swift in Sources */,
+				A14121521EC05E710049E847 /* RTMPBroadcaster.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14121311EC026A90049E847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A141213B1EC026A90049E847 /* BroadcastViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A14121411EC026A90049E847 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A14121341EC026A90049E847 /* ReplayBroadcastUI */;
+			targetProxy = A14121401EC026A90049E847 /* PBXContainerItemProxy */;
+		};
+		A14121441EC026A90049E847 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A14121271EC026A90049E847 /* ReplayBroadcast */;
+			targetProxy = A14121431EC026A90049E847 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A14121161EC0260D0049E847 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14121171EC0260D0049E847 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A141211B1EC0260D0049E847 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A141211C1EC0260D0049E847 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A141213C1EC026A90049E847 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A141213D1EC026A90049E847 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A141211F1EC0260D0049E847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = mh_execute;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A14121201EC0260D0049E847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = mh_execute;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A14121221EC0260D0049E847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A95FF3E9886B632FC8E0F509 /* Pods-StreamingEngine.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 274SMSL696;
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = StreamingEngine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.soocii.StreamingEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A14121231EC0260D0049E847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7855B39BF85FC1890FB614FE /* Pods-StreamingEngine.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 274SMSL696;
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = StreamingEngine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = me.soocii.StreamingEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A14121461EC026A90049E847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0153513E1B5AEC25A5F0981B /* Pods-ReplayBroadcast.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 274SMSL696;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					$SOURCE_ROOT/ReplayBroadcast/include,
+					$SOURCE_ROOT/ReplayBroadcast/include/Broadcaster,
+				);
+				INFOPLIST_FILE = ReplayBroadcast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.soocii.StreamingEngine.ReplayBroadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReplayBroadcast/ReplayBroadcast-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A14121471EC026A90049E847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10DD42428B4EDE8F68E5C872 /* Pods-ReplayBroadcast.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 274SMSL696;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					$SOURCE_ROOT/ReplayBroadcast/include,
+					$SOURCE_ROOT/ReplayBroadcast/include/Broadcaster,
+				);
+				INFOPLIST_FILE = ReplayBroadcast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.soocii.StreamingEngine.ReplayBroadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReplayBroadcast/ReplayBroadcast-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A14121481EC026A90049E847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9BE9502433AC7060836BB56 /* Pods-ReplayBroadcastUI.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 274SMSL696;
+				INFOPLIST_FILE = ReplayBroadcastUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.soocii.StreamingEngine.ReplayBroadcastUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A14121491EC026A90049E847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E90FB831FA12AFE22007C076 /* Pods-ReplayBroadcastUI.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 274SMSL696;
+				INFOPLIST_FILE = ReplayBroadcastUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.soocii.StreamingEngine.ReplayBroadcastUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A141210A1EC0260D0049E847 /* Build configuration list for PBXProject "StreamingEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A141211F1EC0260D0049E847 /* Debug */,
+				A14121201EC0260D0049E847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14121211EC0260D0049E847 /* Build configuration list for PBXNativeTarget "StreamingEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14121221EC0260D0049E847 /* Debug */,
+				A14121231EC0260D0049E847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A141214A1EC026A90049E847 /* Build configuration list for PBXNativeTarget "ReplayBroadcastUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14121481EC026A90049E847 /* Debug */,
+				A14121491EC026A90049E847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A141214B1EC026A90049E847 /* Build configuration list for PBXNativeTarget "ReplayBroadcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14121461EC026A90049E847 /* Debug */,
+				A14121471EC026A90049E847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A14121071EC0260D0049E847 /* Project object */;
+}
